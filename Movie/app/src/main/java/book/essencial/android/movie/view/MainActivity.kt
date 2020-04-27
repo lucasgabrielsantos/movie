@@ -1,7 +1,8 @@
-package book.essencial.android.movie
+package book.essencial.android.movie.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import book.essencial.android.movie.R
 
 class MainActivity : AppCompatActivity() {
 
