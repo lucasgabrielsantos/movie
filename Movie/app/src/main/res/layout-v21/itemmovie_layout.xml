@@ -31,7 +31,7 @@
         android:fontFamily="casual"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="@string/idmovies"
+        android:text="@string/nameMovies"
         android:textColor="@android:color/white"
         android:textSize="10sp" />
 </androidx.cardview.widget.CardView>

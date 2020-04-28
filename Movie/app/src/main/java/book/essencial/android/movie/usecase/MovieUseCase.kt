@@ -7,6 +7,7 @@ class MovieUseCase(private val repository: MovieRepository) {
 
     suspend fun getPopularMovies(): List<Result> {
         val result = repository.getMoviePopularList().results
+        return result
         val popularMovie = ArrayList<Result>()
         result.forEach { resultPopularMovie ->
             popularMovie.add(

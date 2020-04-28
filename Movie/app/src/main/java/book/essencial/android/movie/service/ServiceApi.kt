@@ -1,6 +1,5 @@
 package book.essencial.android.movie.service
 
-import book.essencial.android.movie.api.Result
 import book.essencial.android.movie.api.ResultMovie
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -13,6 +12,7 @@ interface ServiceApi {
     @GET("movie/popular")
     suspend fun getPopularMovies(
         @Query("api_key") apiKey: String = APIKEY,
-        @Query("language") language: String = "pt-BR"
+        @Query("language") language: String = "pt-BR",
+        @Query("page") page: String = "1"
     ): ResultMovie
 }

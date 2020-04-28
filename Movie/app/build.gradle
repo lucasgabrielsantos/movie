@@ -44,6 +44,8 @@ dependencies {
     implementation "org.koin:koin-androidx-scope:$koin_version"
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
     implementation "org.koin:koin-androidx-ext:$koin_version"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
 
     testImplementation 'junit:junit:4.12'
     testImplementation "io.mockk:mockk:1.9"
