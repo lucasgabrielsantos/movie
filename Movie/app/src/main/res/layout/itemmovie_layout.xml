@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="7dp"
+    android:backgroundTint="#00162C">
+
+    <ImageView
+        android:id="@+id/imagemovieName"
+        android:layout_width="72dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/white"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars[8]" />
+
+    <TextView
+        android:id="@+id/titleNameMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/nameMovies"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+</androidx.cardview.widget.CardView>
+

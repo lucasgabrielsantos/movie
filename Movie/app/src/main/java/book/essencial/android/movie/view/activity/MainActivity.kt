@@ -1,4 +1,4 @@
-package book.essencial.android.movie.view
+package book.essencial.android.movie.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
