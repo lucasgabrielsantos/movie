@@ -1,5 +1,6 @@
 package book.essencial.android.movie.service
 
+import book.essencial.android.movie.api.Result
 import book.essencial.android.movie.api.ResultMovie
 import retrofit2.http.GET
 import retrofit2.http.Query
