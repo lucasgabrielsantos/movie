@@ -22,5 +22,12 @@ class MovieViewHolder(
 
         val titleMovie: TextView = itemView.findViewById(R.id.titleNameMovie)
         titleMovie.text = movie.title
+
+        val dateMovie: TextView = itemView.findViewById(R.id.dateMovie)
+        dateMovie.text = movie.release_date
+
+        val descriptionMovie: TextView = itemView.findViewById(R.id.PreviDescriptionMovie)
+        descriptionMovie.text = movie.overview
     }
 }
+
