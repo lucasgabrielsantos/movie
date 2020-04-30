@@ -12,19 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.android.movie.R
 import br.com.android.movie.api.Result
 import br.com.android.movie.movielistdetails.DetailsMoviesActivity
-import br.com.android.movie.repository.MovieRepository
-import br.com.android.movie.usecase.MovieUseCase
 import br.com.android.movie.viewmodel.MovieViewModel
-import br.com.android.movie.viewmodel.MovieViewModelFactory
 import br.com.android.movie.viewmodel.event.MovieEvent
 import com.google.android.material.snackbar.Snackbar
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var repository: MovieRepository
-    private lateinit var usecase: MovieUseCase
-    private lateinit var factory: MovieViewModelFactory
+
     private lateinit var progressBar: ProgressBar
     private lateinit var showerror: AppCompatTextView
     private lateinit var movieRecyclerView: RecyclerView
