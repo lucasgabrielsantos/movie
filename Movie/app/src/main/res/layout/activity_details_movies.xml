@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp">
 
-
         <ImageView
             android:id="@+id/imageDetailAlpha"
             android:layout_width="0dp"
@@ -133,36 +132,16 @@
             app:layout_constraintTop_toBottomOf="@+id/published"
             tools:text="0.0" />
 
-        <TextView
-            android:id="@+id/languageDetailsPROT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="serif-monospace"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/votesMovie"
-            android:text="Linguagem: " />
-
-        <TextView
-            android:id="@+id/language"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="monospace"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/languageDetailsPROT"
-            app:layout_constraintTop_toBottomOf="@+id/votesMovie"
-            app:layout_constraintVertical_bias="0.0"
-            tools:text="Pt" />
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toEndOf="@+id/votesMovie"
+            app:layout_constraintTop_toBottomOf="@+id/published"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

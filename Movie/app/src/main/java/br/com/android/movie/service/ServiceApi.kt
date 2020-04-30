@@ -4,7 +4,6 @@ import br.com.android.movie.api.ResultMovie
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-
 const val APIKEY = "e8014d38210f3e7f0d80009b43579fa7"
 
 interface ServiceApi {

@@ -6,8 +6,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import br.com.android.movie.R
 import br.com.android.movie.api.Result
-import br.com.android.movie.movielist.HomeActivity.Companion.MOVIE_KEY
 import br.com.android.movie.movielist.BASE_URL
+import br.com.android.movie.movielist.HomeActivity.Companion.MOVIE_KEY
 import com.squareup.picasso.Picasso
 
 class DetailsMoviesActivity : AppCompatActivity() {
@@ -18,9 +18,6 @@ class DetailsMoviesActivity : AppCompatActivity() {
     private lateinit var description: TextView
     private lateinit var published: TextView
     private lateinit var price: TextView
-    private lateinit var language: TextView
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,14 +27,13 @@ class DetailsMoviesActivity : AppCompatActivity() {
         viewsUi()
     }
 
-    fun initViews(){
+    fun initViews() {
         imageDetail = findViewById(R.id.imageDetail)
         imageDetailAlpha = findViewById(R.id.imageDetailAlpha)
         titleDetail = findViewById(R.id.titleDetail)
         description = findViewById(R.id.descriptiondetails)
         published = findViewById(R.id.published)
         price = findViewById(R.id.votesMovie)
-        language = findViewById(R.id.language)
 
     }
 
@@ -49,7 +45,6 @@ class DetailsMoviesActivity : AppCompatActivity() {
                 description.text = it.overview
                 published.text = it.release_date
                 price.text = it.vote_average.toString()
-                language.text = it.original_language
 
                 Picasso.with(this)
                     .load(BASE_URL + it.poster_path)

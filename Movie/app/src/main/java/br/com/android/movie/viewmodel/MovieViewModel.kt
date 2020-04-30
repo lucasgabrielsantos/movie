@@ -16,7 +16,6 @@ class MovieViewModel(private val useCase: MovieUseCase) :
     private val event: MutableLiveData<MovieEvent> = MutableLiveData()
     val eventView: LiveData<MovieEvent> = event
 
-
     fun getMovie() {
         viewModelScope.launch {
             event.value = MovieEvent.LoadingVisible(View.GONE)

@@ -8,7 +8,6 @@ import br.com.android.movie.movielist.HomeActivity
 import kotlinx.android.synthetic.main.activity_intro.*
 import java.util.*
 
-
 class IntroActivity : AppCompatActivity() {
     private val timer = Timer()
 

@@ -11,7 +11,6 @@ import com.squareup.picasso.Picasso
 
 const val BASE_URL = "https://image.tmdb.org/t/p/w185/"
 
-
 class MovieViewHolder(
     itemView: View
 ) : RecyclerView.ViewHolder(itemView) {

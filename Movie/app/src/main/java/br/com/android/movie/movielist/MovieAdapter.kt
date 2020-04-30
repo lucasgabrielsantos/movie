@@ -7,7 +7,6 @@ import br.com.android.movie.R
 import br.com.android.movie.api.Result
 import br.com.android.movie.viewmodel.MovieViewModel
 
-
 class MovieAdapter(
     private val movies: List<Result>,
     private val viewModel: MovieViewModel
