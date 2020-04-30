@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_details"
+    tools:context=".movielistdetails.DetailsMoviesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+
+        <ImageView
+            android:id="@+id/imageDetailAlpha"
+            android:layout_width="0dp"
+            android:layout_height="281dp"
+            android:alpha="0.4"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filtro"
+            tools:src="@tools:sample/avatars[8]" />
+
+        <View
+            android:id="@+id/filtro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageDetail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageDetailAlpha"
+            tools:src="@tools:sample/avatars[8]" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageDetail"
+            tools:text="Titulo do filme" />
+
+        <TextView
+            android:id="@+id/descriptiondetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleDetail"
+            tools:text="Description: " />
+
+        <TextView
+            android:id="@+id/publishedDetailsPROT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptiondetails"
+            android:text="Data Publicada: " />
+
+        <TextView
+            android:id="@+id/published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/publishedDetailsPROT"
+            app:layout_constraintTop_toBottomOf="@+id/descriptiondetails"
+            tools:text="01/01/2000" />
+
+        <TextView
+            android:id="@+id/vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/published"
+            android:text="@string/medium_vote" />
+
+        <TextView
+            android:id="@+id/votesMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/vote"
+            app:layout_constraintTop_toBottomOf="@+id/published"
+            tools:text="0.0" />
+
+        <TextView
+            android:id="@+id/languageDetailsPROT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/votesMovie"
+            android:text="Linguagem: " />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languageDetailsPROT"
+            app:layout_constraintTop_toBottomOf="@+id/votesMovie"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Pt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -3,6 +3,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_details"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -19,7 +20,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/background_details"
+            >
 
 
             <ImageView
@@ -47,10 +50,10 @@
                 android:layout_margin="12dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="casual"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/nameMovies"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/PreviDescriptionMovie"
@@ -66,10 +69,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="casual"
-                android:textColor="@android:color/black"
+                android:fontFamily="monospace"
+                android:textColor="@android:color/white"
                 android:textSize="10sp"
-                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imagemovieName"
@@ -82,10 +84,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:fontFamily="casual"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
-                android:text="01/01/2000"
-                android:textColor="@android:color/black"
+                tools:text="01/01/2000"
+                android:textColor="@android:color/white"
                 android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
